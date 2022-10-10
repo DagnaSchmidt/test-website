@@ -1,5 +1,7 @@
 @use 'var';
 
+
+
 //base//
 *{
     box-sizing: border-box;
@@ -12,6 +14,154 @@ a, button, input, textarea, select {
 ul, li {
     list-style-type: none;
 }
-body {
+
+
+.body {
+    width: 100%;
+    background-color: var.$white-color;
+    //position: relative;
+    //top: 0;
+    margin: auto;
     overflow-x: hidden;  //hide width scroll
+}
+
+//REUSABLES//
+.logo {
+    font-family: var.$main-font;
+    color: var.$white-color;
+    font-weight: var.$w-x-bold;
+    text-transform: uppercase;
+    letter-spacing: 4.8px;
+}
+.title {
+    font-family: var.$main-font;
+    color: var.$white-color;
+    font-weight: var.$w-normal;
+    text-transform: capitalize;
+    letter-spacing: 6.82px;
+}
+.btn-main {
+    background-color: var.$main-color;
+    padding: 1vw;
+    color: var.$white-color;
+    font-family: var.$secondary-font;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    &:hover {
+        background-color: var.$main-lighter-color;
+        cursor: pointer;
+    }
+}
+
+//HEADER// 
+.header {
+    width: 100vw;
+    max-width: 1800px;
+    height: 45vw;
+    //max-height: 820px;
+    background-image: url(../img/bg-img-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 1vw 1vw 0 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__content {
+        width: 65vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__logo {
+            font-size: var.$s-x-large;
+            line-height: 26px;
+            padding-bottom: .6vw;
+        }
+        &__title {
+            font-size: var.$s-medium;
+            line-height: 26px;
+        }
+        &__search {
+            width: 36vw;
+            height: auto;
+            margin: 2.5vw 0 6vw 0;
+            background-color: var.$white-color;
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+            justify-content: flex-end;
+            gap: .2vw;
+            padding: .2vw;
+            &__btn {
+                display: flex;
+                gap: 1vw;
+            }
+            &__input {
+                width: 100%;
+                background-color: var.$white-color;
+                &::placeholder {
+                    text-align: center;
+                    font-family: var.$main-font;
+                    color: var.$text-placeholder-color;
+                    font-size: var.$s-x-small;
+                    font-weight: var.$w-normal;
+                    letter-spacing: 2.8px;
+                }
+                &:hover {
+                    background-color: var.$text-light-color;
+                    //FINISH LATER!!!!!//
+                }
+            }
+        }
+        &__scroll {
+            display: flex;
+            flex-direction: column;
+            gap: .4vw;
+            align-items: center;
+            color: var.$white-color;
+            &__text {
+                font-family: var.$main-font;
+                font-size: var.$s-x-small;
+                font-weight: var.$w-normal;
+                text-transform: capitalize;
+                letter-spacing: 2.8px;
+            }
+        }
+    }
+}
+.nav {
+    width: 100%;
+    height: 4.5vw;
+    background-color: var.$main-color;
+    margin: 0vw 1vw 0 1vw;
+    position: sticky;
+    top: 0vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__content {
+        width: 65vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__logo {
+            font-size: var.$s-x-medium;
+        }
+        &__list {
+            display: flex;
+            gap: 2.5vw;
+        }
+        &__item {
+            font-family: var.$secondary-font;
+            font-size: var.$s-x-small;
+            font-weight: var.$w-normal;
+            color: var.$white-color;
+            text-transform: uppercase;
+            line-height: 26px;
+            &:hover {
+                cursor: pointer;
+                text-transform: lowercase;
+            }
+        }
+    }
 }
