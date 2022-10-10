@@ -18,5 +18,9 @@
         "titleBar.inactiveBackground": "#87b6a199",
         "titleBar.inactiveForeground": "#15202b99"
     },
-    "peacock.color": "#87b6a1"
+    "peacock.color": "#87b6a1",
+    "cSpell.words": [
+        "Aleo",
+        "Bhromaon"
+    ]
 }
