@@ -1,6 +1,12 @@
 @use 'var';
 
-
+%h2 {
+    font-family: var.$secondary-font;
+    font-size: var.$s-large;
+    font-weight: var.$w-normal;
+    color: var.$white-color;
+    line-height: 26px;
+}
 
 //base//
 *{
@@ -190,11 +196,7 @@ ul, li {
                 flex-direction: column;
                 justify-content: flex-end;
                 &__title {
-                    font-family: var.$secondary-font;
-                    font-size: var.$s-large;
-                    font-weight: var.$w-normal;
-                    color: var.$white-color;
-                    line-height: 26px;
+                    @extend %h2;
                 }
                 &__text {
                     font-family: var.$main-font;
@@ -345,5 +347,66 @@ ul, li {
             }
         }
     }
-    
+    .testimonial {
+        width: 100vw;
+        height: 40vw;
+        max-width: 1800px;
+        background-image: url(../img/bg-img-5.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 1vw;
+        &__content {
+            width: 65vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &__title {
+                @extend %h2;
+                padding-bottom: 4.7vw;
+            }
+            &__card {
+                display: flex;
+                height: 16vw;
+                background-color: var.$bg-dark-color;
+                &__left {
+                    img {
+                        height: 16vw;
+                    }
+                }
+                &__right {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    padding: 2.5vw 1.5vw 1.5vw 3.3vw;
+                    &__title {
+                        font-family: var.$main-font;
+                        font-size: var.$s-regular;
+                        font-weight: var.$w-normal;
+                        color: var.$text-light-title-color;
+                        line-height: 26px;
+                        text-transform: uppercase;  
+                    }
+                    &__quote {
+                        i {
+                            font-size: var.$s-medium;
+                            color: var.$main-darker-color;
+                            padding-right: 1vw;
+                            display: inline;
+                        }
+                        &__text {
+                            font-family: var.$tertiary-font;
+                            font-size: var.$s-small;
+                            font-weight: var.$w-normal;
+                            color: var.$text-light-color;
+                            line-height: 26px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

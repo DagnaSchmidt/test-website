@@ -1,3 +1,11 @@
+.main .testimonial__content__title, .main .why__content__left__title {
+  font-family: "Aleo", serif;
+  font-size: 36px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 26px;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -201,13 +209,6 @@ ul, li {
   flex-direction: column;
   justify-content: flex-end;
 }
-.main .why__content__left__title {
-  font-family: "Aleo", serif;
-  font-size: 36px;
-  font-weight: 400;
-  color: #fff;
-  line-height: 26px;
-}
 .main .why__content__left__text {
   font-family: "Josefin Sans", sans-serif;
   font-size: 16px;
@@ -344,4 +345,61 @@ ul, li {
   color: #e8e8e8;
   line-height: 26px;
   padding-bottom: 2.5vw;
+}
+.main .testimonial {
+  width: 100vw;
+  height: 40vw;
+  max-width: 1800px;
+  background-image: url(../img/bg-img-5.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1vw;
+}
+.main .testimonial__content {
+  width: 65vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main .testimonial__content__title {
+  padding-bottom: 4.7vw;
+}
+.main .testimonial__content__card {
+  display: flex;
+  height: 16vw;
+  background-color: #333333;
+}
+.main .testimonial__content__card__left img {
+  height: 16vw;
+}
+.main .testimonial__content__card__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2.5vw 1.5vw 1.5vw 3.3vw;
+}
+.main .testimonial__content__card__right__title {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fefefe;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.main .testimonial__content__card__right__quote i {
+  font-size: 22px;
+  color: #496bfe;
+  padding-right: 1vw;
+  display: inline;
+}
+.main .testimonial__content__card__right__quote__text {
+  font-family: "Mukta", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #e8e8e8;
+  line-height: 26px;
 }/*# sourceMappingURL=styles.css.map */
