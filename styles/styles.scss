@@ -25,10 +25,11 @@ ul, li {
 .body {
     width: 100%;
     background-color: var.$white-color;
-    //position: relative;
-    //top: 0;
-    //CENTER !!!! CHECK LATER!!!!!
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     overflow-x: hidden;  //hide width scroll
 }
 
@@ -54,6 +55,7 @@ ul, li {
     font-family: var.$secondary-font;
     text-transform: uppercase;
     letter-spacing: 1.4px;
+    align-self: flex-start;
     &:hover {
         background-color: var.$main-lighter-color;
         cursor: pointer;
@@ -115,7 +117,9 @@ ul, li {
                 }
                 &:hover {
                     background-color: var.$text-light-color;
-                    //FINISH LATER!!!!!//
+                }
+                &:focus, &:active {
+                    background-color: var.$text-placeholder-color;
                 }
             }
         }
@@ -188,7 +192,7 @@ ul, li {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 0 1vw;
+        margin: 0 1vw 0 1vw;
         &__content {
             width: 65vw;
             display: flex;
@@ -209,10 +213,6 @@ ul, li {
                     letter-spacing: 1.6px;
                     line-height: 26px;
                     padding: 2.5vw 0;
-                }
-                &__btn {
-                    //width: auto;
-                    //FIX THIS BUTTON LATER!!!!!!!!!!!!!!//
                 }
             }
             &__right {
@@ -284,11 +284,12 @@ ul, li {
             background-image: url(../img/bg-img-3.png);
             background-repeat: no-repeat;
             background-size: cover;
-            margin: 0 1vw;
             height: 38vw;
             display: flex;
             justify-content: center;
             align-items: center;
+            width: 100vw;
+            margin: 0 1vw;
             &__content {
                 width: 65vw;
                 height: 28vw;
@@ -299,11 +300,12 @@ ul, li {
             background-image: url(../img/bg-img-4.png);
             background-repeat: no-repeat;
             background-size: cover;
-            margin: 0 1vw;
             height: 38vw;
             display: flex;
             justify-content: center;
             align-items: center;
+            width: 100vw;
+            margin: 0 1vw;
             &__content {
                 width: 65vw;
                 height: 28vw;
@@ -342,6 +344,9 @@ ul, li {
                 color: var.$text-light-color;
                 line-height: 26px;
                 padding-bottom: 2.5vw;
+            }
+            &__btn {
+                align-self: flex-start;
             }
         }
     }

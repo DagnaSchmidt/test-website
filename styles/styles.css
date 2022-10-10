@@ -24,6 +24,10 @@ ul, li {
   width: 100%;
   background-color: #fff;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   overflow-x: hidden;
 }
 
@@ -50,6 +54,7 @@ ul, li {
   font-family: "Aleo", serif;
   text-transform: uppercase;
   letter-spacing: 1.4px;
+  align-self: flex-start;
 }
 .btn-main:hover {
   background-color: #00a2ff;
@@ -131,6 +136,9 @@ ul, li {
 .header__content__search__input:hover {
   background-color: #e8e8e8;
 }
+.header__content__search__input:focus, .header__content__search__input:active {
+  background-color: #999999;
+}
 .header__content__scroll {
   display: flex;
   flex-direction: column;
@@ -199,7 +207,7 @@ ul, li {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 1vw;
+  margin: 0 1vw 0 1vw;
 }
 .main .why__content {
   width: 65vw;
@@ -284,11 +292,12 @@ ul, li {
   background-image: url(../img/bg-img-3.png);
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 0 1vw;
   height: 38vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100vw;
+  margin: 0 1vw;
 }
 .main .travel__one__content {
   width: 65vw;
@@ -299,11 +308,12 @@ ul, li {
   background-image: url(../img/bg-img-4.png);
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 0 1vw;
   height: 38vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100vw;
+  margin: 0 1vw;
 }
 .main .travel__two__content {
   width: 65vw;
@@ -343,6 +353,9 @@ ul, li {
   color: #e8e8e8;
   line-height: 26px;
   padding-bottom: 2.5vw;
+}
+.main .travel .card__btn {
+  align-self: flex-start;
 }
 .main .testimonial {
   width: 100vw;
