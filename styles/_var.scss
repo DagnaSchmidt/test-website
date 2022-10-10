@@ -1,19 +1,34 @@
 //fonts//
-$main-font:
+$main-font: 'Josefin Sans', sans-serif;
+$secondary-font: 'Aleo', serif;
+$tertiary-font: 'Mukta', sans-serif;
 
 //font sizes//
-$s-x-small: px;
-$s-small: px;
-$s-regular: px;
-$s-medium: px;
-$s-large: px;
+$s-x-small: 14px;
+$s-small: 16px;
+$s-regular: 20px;
+$s-medium: 22px;
+$s-x-medium: 24px;
+$s-large: 36px;
 
 //font weights//
 $w-normal: 400;
+$w-medium: 500;
 $w-bold: 600;
+$w-x-bold: 700;
 
 //colors//
-$text-color:
+$white-color: #fff;
+$black-color: #000;
+$text-light-color: #e8e8e8;
+$text-light-title-color: #fefefe;
+$text-placeholder-color: #999999;
+$main-color: #5474fd;
+$main-lighter-color: #00a2ff;
+$main-darker-color: #496bfe;
+$bg-dark-color: #333333;
+$bg-darker-color: #232323;
+$accent-color: #ff6363;
 
 //margins//
-$side-site-margin:
+$side-site-margin: 1vw;
