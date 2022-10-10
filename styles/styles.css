@@ -150,6 +150,7 @@ ul, li {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 6;
 }
 .nav__content {
   width: 65vw;
@@ -275,4 +276,72 @@ ul, li {
 .main .how__content__img {
   position: absolute;
   top: -3vw;
+}
+.main .travel {
+  width: 100vw;
+  max-width: 1800px;
+}
+.main .travel__one {
+  background-image: url(../img/bg-img-3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 1vw;
+  height: 38vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .travel__one__content {
+  width: 65vw;
+  height: 28vw;
+  display: flex;
+}
+.main .travel__two {
+  background-image: url(../img/bg-img-4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 1vw;
+  height: 38vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .travel__two__content {
+  width: 65vw;
+  height: 28vw;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.main .travel .card {
+  width: 30vw;
+  height: 21vw;
+  background-color: rgba(35, 35, 35, 0.9);
+  padding: 1.6vw;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main .travel .card__subtitle {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #e8e8e8;
+  text-transform: capitalize;
+}
+.main .travel .card__title {
+  padding: 1.2vw 0 0.8vw 0;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+}
+.main .travel .card__text {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #e8e8e8;
+  line-height: 26px;
+  padding-bottom: 2.5vw;
 }/*# sourceMappingURL=styles.css.map */

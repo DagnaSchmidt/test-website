@@ -141,6 +141,7 @@ ul, li {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 6;
     &__content {
         width: 65vw;
         display: flex;
@@ -276,4 +277,73 @@ ul, li {
             }
         }
     }
+    .travel {
+        width: 100vw;
+        max-width: 1800px;
+        &__one {
+            background-image: url(../img/bg-img-3.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0 1vw;
+            height: 38vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &__content {
+                width: 65vw;
+                height: 28vw;
+                display: flex;
+            }
+        }
+        &__two {
+            background-image: url(../img/bg-img-4.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0 1vw;
+            height: 38vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &__content {
+                width: 65vw;
+                height: 28vw;
+                display: flex;
+                flex-direction: row-reverse;
+            }
+        }
+        .card {
+            width: 30vw;
+            height: 21vw;
+            background-color: rgba(35, 35, 35, .9);
+            padding: 1.6vw;
+            align-self: flex-end;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            &__subtitle {
+                font-family: var.$main-font;
+                font-size: var.$s-regular;
+                font-weight: var.$w-normal;
+                color: var.$text-light-color;
+                text-transform: capitalize;
+            }
+            &__title {
+                padding: 1.2vw 0 .8vw 0;
+                font-family: var.$main-font;
+                font-size: var.$s-regular;
+                font-weight: var.$w-normal;
+                color: var.$white-color;
+                text-transform: uppercase;
+            }
+            &__text {
+                font-family: var.$main-font;
+                font-size: var.$s-small;
+                font-weight: var.$w-normal;
+                color: var.$text-light-color;
+                line-height: 26px;
+                padding-bottom: 2.5vw;
+            }
+        }
+    }
+    
 }
