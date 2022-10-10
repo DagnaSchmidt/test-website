@@ -139,7 +139,8 @@ ul, li {
 }
 
 .nav {
-  width: 100%;
+  width: 100vw;
+  max-width: 1800px;
   height: 4.5vw;
   background-color: #5474fd;
   margin: 0vw 1vw 0 1vw;
@@ -174,4 +175,59 @@ ul, li {
 .nav__content__item:hover {
   cursor: pointer;
   text-transform: lowercase;
+}
+
+.main .why {
+  width: 100vw;
+  height: 38vw;
+  max-width: 1800px;
+  background-image: url(../img/bg-img-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1vw;
+}
+.main .why__content {
+  width: 65vw;
+  display: flex;
+  justify-content: space-between;
+}
+.main .why__content__left {
+  width: 31vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.main .why__content__left__title {
+  font-family: "Aleo", serif;
+  font-size: 36px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 26px;
+}
+.main .why__content__left__text {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #e8e8e8;
+  letter-spacing: 1.6px;
+  line-height: 26px;
+  padding: 2.5vw 0;
+}
+.main .why__content__right {
+  width: 24.5vw;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4vw;
+}
+.main .why__content__right__img {
+  width: 19vw;
+}
+.main .why__content__right__img:first-child {
+  align-self: flex-start;
+}
+.main .why__content__right__img:last-child {
+  align-self: flex-end;
 }/*# sourceMappingURL=styles.css.map */
