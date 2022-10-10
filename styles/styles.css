@@ -402,4 +402,46 @@ ul, li {
   font-weight: 400;
   color: #e8e8e8;
   line-height: 26px;
+}
+
+.footer {
+  width: 100vw;
+  max-width: 1800px;
+  height: 15vw;
+  margin: 0 1vw 1vw 1vw;
+  display: flex;
+  justify-content: center;
+  background-color: #232323;
+}
+.footer__content {
+  width: 12vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 2.2vw;
+}
+.footer__content__logo {
+  font-size: 22px;
+}
+.footer__content__title {
+  font-size: 16px;
+  letter-spacing: 1.6px;
+  padding: 0.5vw 0 1vw 0;
+}
+.footer__content__icons {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer__content__icons i {
+  font-size: 16px;
+  color: #e8e8e8;
+}
+.footer__content__icons i:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.footer__content__icons .other {
+  color: #5474fd;
 }/*# sourceMappingURL=styles.css.map */
