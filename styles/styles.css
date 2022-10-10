@@ -230,4 +230,49 @@ ul, li {
 }
 .main .why__content__right__img:last-child {
   align-self: flex-end;
+}
+.main .how {
+  width: 100vw;
+  height: 19vw;
+  max-width: 1800px;
+  background-color: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1vw;
+}
+.main .how__content {
+  position: relative;
+  width: 65vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9vw;
+}
+.main .how__content__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vw;
+  background-color: #333333;
+  z-index: 2;
+}
+.main .how__content__icon i {
+  font-size: 48px;
+  color: #5474fd;
+}
+.main .how__content .other i {
+  color: #ff6363;
+}
+.main .how__content__text {
+  font-family: "Aleo", serif;
+  font-weight: 400;
+  font-size: 36px;
+  color: #e8e8e8;
+  line-height: 26px;
+  text-transform: capitalize;
+}
+.main .how__content__img {
+  position: absolute;
+  top: -3vw;
 }/*# sourceMappingURL=styles.css.map */
