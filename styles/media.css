@@ -1,0 +1,266 @@
+@media screen and (max-width: 1350px) {
+  .nav__content__logo {
+    font-size: 20px;
+  }
+  .nav__content__item {
+    font-size: 12px;
+  }
+  .main .how__content__text {
+    font-size: 16px;
+  }
+  .main .how__content__icon i {
+    font-size: 24px;
+  }
+  .main .travel .card__subtitle, .main .travel .card__title {
+    font-size: 16px;
+  }
+  .main .travel .card__text {
+    font-size: 12px;
+    padding-bottom: 1.4vw;
+    line-height: 20px;
+  }
+  .main .testimonial__content__card__right__quote__text {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+@media screen and (max-width: 1120px) {
+  .header__content__search__input::-moz-placeholder {
+    font-size: 12px;
+    letter-spacing: 1.2px;
+  }
+  .header__content__search__input:-ms-input-placeholder {
+    font-size: 12px;
+    letter-spacing: 1.2px;
+  }
+  .header__content__search__input::placeholder {
+    font-size: 12px;
+    letter-spacing: 1.2px;
+  }
+  .main .why__content__left__title {
+    font-size: 20px;
+  }
+  .main .why__content__left__text {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .main .testimonial__content__card__right__quote__text {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .main .testimonial__content__title {
+    font-size: 20px;
+  }
+  .footer__content__logo {
+    font-size: 16px;
+  }
+  .footer__content__title {
+    font-size: 12px;
+  }
+  .footer__content__icons i {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .header__content__title {
+    font-size: 16px;
+  }
+  .header__content__scroll__text {
+    font-size: 12px;
+  }
+  .btn-main {
+    font-size: 14px;
+  }
+  .main .travel .card__text {
+    font-size: 12px;
+    padding-bottom: 1.4vw;
+    line-height: 12px;
+  }
+  .main .testimonial__content__card__right {
+    padding: 1.5vw 1.5vw 1.5vw 1.5vw;
+  }
+  .main .testimonial__content__card__right__title {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 880px) {
+  .nav__content__list {
+    display: none;
+  }
+  .nav__content__menu {
+    display: flex;
+  }
+  .header__content__search__input::-moz-placeholder {
+    font-size: 12px;
+    letter-spacing: 0px;
+  }
+  .header__content__search__input:-ms-input-placeholder {
+    font-size: 12px;
+    letter-spacing: 0px;
+  }
+  .header__content__search__input::placeholder {
+    font-size: 12px;
+    letter-spacing: 0px;
+  }
+  .main .testimonial__content__card__left {
+    display: none;
+  }
+}
+@media screen and (max-width: 830px) {
+  .nav__content__logo {
+    font-size: 14px;
+  }
+  .main .why__content__left__title {
+    font-size: 14px;
+  }
+  .main .how__content__text {
+    font-size: 14px;
+  }
+  .main .travel .card {
+    width: 65vw;
+  }
+  .footer__content__logo {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .header__content__search {
+    display: none;
+  }
+  .header__content__title {
+    padding-bottom: 8vw;
+  }
+  .main .why__content {
+    flex-direction: column;
+    gap: 1vw;
+  }
+  .main .why__content__left {
+    width: 65vw;
+  }
+  .main .why__content__left__text {
+    padding: 0.4vw 0;
+  }
+  .main .why__content__right {
+    width: 65vw;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .main .testimonial__content__card {
+    height: 20vw;
+  }
+  .main .travel .card {
+    height: 25vw;
+  }
+  .main .testimonial__content__title {
+    font-size: 14px;
+    padding-bottom: 2vw;
+  }
+}
+@media screen and (max-width: 550px) {
+  .header__content__logo {
+    font-size: 16px;
+  }
+  .header__content__title {
+    font-size: 14px;
+    letter-spacing: 3px;
+  }
+  .nav__content__logo, .nav__content__menu {
+    font-size: 12px;
+  }
+  .main .testimonial {
+    height: 50vw;
+  }
+  .main .testimonial__content__card {
+    height: 30vw;
+  }
+  .main .why {
+    height: 50vw;
+  }
+  .main .why__content {
+    width: 85vw;
+  }
+  .main .why__content__left, .main .why__content__right {
+    width: 85vw;
+  }
+  .main .how__content {
+    width: 85vw;
+  }
+  .main .how__content__icon i {
+    font-size: 14px;
+  }
+  .main .how__content__text {
+    font-size: 12px;
+  }
+  .main .travel__one, .main .travel__two {
+    height: 50vw;
+  }
+  .main .travel__one__content, .main .travel__two__content {
+    width: 85vw;
+  }
+  .main .travel .card {
+    width: 85vw;
+    height: 30vw;
+  }
+  .main .testimonial__content {
+    width: 85vw;
+    height: 45vw;
+  }
+}
+@media screen and (max-width: 550px) {
+  .main .why__content__right {
+    display: none;
+  }
+  .main .travel__one__content, .main .travel__two__content {
+    height: 40vw;
+  }
+  .main .travel .card {
+    height: 40vw;
+    justify-content: space-evenly;
+  }
+  .footer__content {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 85vw;
+  }
+  .footer__content__title {
+    display: none;
+  }
+}
+@media screen and (max-width: 320px) {
+  .header {
+    height: 85vw;
+  }
+  .nav {
+    height: 10vw;
+  }
+  .main .why {
+    height: 85vw;
+  }
+  .main .why__content__left__text {
+    padding-bottom: 5vw;
+  }
+  .main .how {
+    height: 85vw;
+  }
+  .main .how__content {
+    flex-direction: column;
+  }
+  .main .travel__one, .main .travel__two {
+    height: 85vw;
+  }
+  .main .travel__one__content, .main .travel__two__content {
+    height: 65vw;
+  }
+  .main .travel .card {
+    height: 65vw;
+  }
+  .main .testimonial {
+    height: 85vw;
+  }
+  .main .testimonial__content {
+    height: 65vw;
+  }
+  .main .testimonial__content__card {
+    height: 65vw;
+  }
+}/*# sourceMappingURL=media.css.map */

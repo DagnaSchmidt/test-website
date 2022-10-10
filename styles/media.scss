@@ -1,0 +1,316 @@
+@use 'var';
+
+@media  screen and (max-width: 1350px) {
+    .nav__content {
+        &__logo {
+            font-size: var.$s-regular;
+        }
+        &__item {
+            font-size: 12px;
+        }
+    }    
+    .main {
+        .how__content {
+            &__text {
+                font-size: var.$s-small;
+            }
+            &__icon {
+                i {
+                    font-size: var.$s-x-medium;
+                }
+            }
+        }
+        .travel {
+            .card__subtitle, .card__title {
+                font-size: var.$s-small;
+            }
+            .card__text {
+                font-size: 12px;
+                padding-bottom: 1.4vw;
+                line-height: 20px;
+            }
+        }
+        .testimonial__content__card__right__quote__text {
+            font-size: 12px;
+            line-height: 14px;
+        }
+    } 
+}
+
+@media  screen and (max-width: 1120px) {
+    .header__content__search__input {
+        &::placeholder {
+            font-size: 12px;
+            letter-spacing: 1.2px;
+        }
+    }
+    .main {
+        .why__content__left {
+            &__title {
+                font-size: var.$s-regular;
+            }
+            &__text {
+                font-size: 12px;
+                line-height: 12px;
+            }
+        }
+        .testimonial__content__card__right__quote__text {
+            font-size: 12px;
+            line-height: 12px;
+        }
+        .testimonial__content__title {
+            font-size: var.$s-regular;
+        }
+    }
+    .footer {
+        &__content {
+            &__logo {
+                font-size: var.$s-small; 
+            }
+            &__title {
+                font-size: 12px;
+            }
+            &__icons {
+                i {
+                    font-size: 12px;
+                }
+            }
+        } 
+    }
+}
+
+@media  screen and (max-width: 950px) {
+    .header__content__title {
+        font-size: var.$s-small;
+    }
+    .header__content__scroll__text {
+        font-size: 12px;
+    }
+    .btn-main {
+        font-size: var.$s-x-small;
+    }
+    .main {
+        .travel {
+            .card__text {
+                font-size: 12px;
+                padding-bottom: 1.4vw;
+                line-height: 12px;
+            }
+        }
+        .testimonial__content__card__right {
+            padding: 1.5vw 1.5vw 1.5vw 1.5vw;
+            &__title {
+                font-size: var.$s-x-small;
+            }
+        }
+    }
+}
+
+@media  screen and (max-width: 880px) {
+    .nav__content__list {
+        display: none;
+    }
+    .nav__content__menu {
+        display: flex;
+    }
+    .header__content__search__input {
+        &::placeholder {
+            font-size: 12px;
+            letter-spacing: 0px;
+        }
+    }
+    .main {
+        .testimonial__content__card__left {
+            display: none;
+        }
+    }
+}
+
+@media  screen and (max-width: 830px) {
+    .nav__content__logo {
+        font-size: var.$s-x-small;
+    }
+    .main {
+        .why__content__left__title {
+            font-size: var.$s-x-small;
+        }
+        .how__content__text {
+            font-size: var.$s-x-small;
+        }
+        .travel {
+            .card {
+                width: 65vw;
+            }
+        }
+    }
+    .footer__content__logo {
+        font-size: 12px;
+    }
+}
+
+@media  screen and (max-width: 700px) {
+    .header__content__search {
+        display: none;
+    }
+    .header__content__title {
+        padding-bottom: 8vw;
+    }
+    .main {
+        .why__content {
+            flex-direction: column;
+            gap: 1vw;
+            &__left {
+                width: 65vw;
+                &__text {
+                    padding: .4vw 0;
+                }
+            }
+            &__right {
+                width: 65vw;
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+        }
+        .testimonial__content__card {
+            height: 20vw;
+        }
+        .travel {
+            .card {
+                height: 25vw;
+            }
+        }
+        .testimonial__content__title {
+            font-size: 14px;
+            padding-bottom: 2vw;
+        }
+    }
+}
+
+@media  screen and (max-width: 550px) {
+    .header__content {
+    &__logo {
+        font-size: var.$s-small;
+    }
+    &__title {
+        font-size: var.$s-x-small;
+        letter-spacing: 3px;
+    }
+}
+    .nav__content {
+        &__logo, &__menu {
+        font-size: 12px;
+        }
+    }
+    .main {
+        .testimonial {
+            height: 50vw;
+            &__content__card {
+                height: 30vw;
+            }
+        }
+        .why {
+            height: 50vw;
+        }
+        .why__content {
+            width: 85vw;
+            &__left, &__right {
+                width: 85vw;
+            }
+        }
+        .how__content {
+            width: 85vw;
+            &__icon {
+                i {
+                    font-size: var.$s-x-small;
+                }
+            }
+            &__text {
+                font-size: 12px;
+            }
+        }
+        .travel__one, .travel__two {
+            height: 50vw;
+        }
+        .travel__one__content, .travel__two__content {
+            width: 85vw;
+        }
+        .travel {
+            .card {
+                width: 85vw;
+                height: 30vw;
+            }
+        }
+        .testimonial__content {
+            width: 85vw;
+            height: 45vw;
+        }
+    } 
+}
+
+@media  screen and (max-width: 550px) {
+    .main {
+        .why__content__right {
+            display: none;
+        }
+        .travel__one__content, .travel__two__content {
+            height: 40vw;
+        }
+        .travel {
+            .card {
+                height: 40vw;
+                justify-content: space-evenly;
+            }
+        }
+    }
+    .footer__content {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 85vw;
+        &__title {
+            display: none;
+        }
+    }
+}
+
+@media  screen and (max-width: 320px) {
+    .header {
+        height: 85vw;
+    }
+    .nav {
+        height: 10vw;
+    }
+    .main {
+        .why {
+            height: 85vw;
+            &__content__left__text {
+                padding-bottom: 5vw;
+            }
+        }
+        .how {
+            height: 85vw;
+            &__content {
+                flex-direction: column;
+            }
+        }
+        .travel__one, .travel__two {
+            height: 85vw;
+        }
+        .travel__one__content, .travel__two__content {
+            height: 65vw;
+        }
+        .travel {
+            .card {
+                height: 65vw;
+            }
+        }
+        .testimonial {
+            height: 85vw;
+            &__content {
+                height: 65vw;
+                &__card {
+                    height: 65vw;
+                }
+            }
+        }
+    }
+}

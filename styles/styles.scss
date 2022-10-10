@@ -159,7 +159,7 @@ ul, li {
             display: flex;
             gap: 2.5vw;
         }
-        &__item {
+        &__item, &__menu {
             font-family: var.$secondary-font;
             font-size: var.$s-x-small;
             font-weight: var.$w-normal;
@@ -171,9 +171,13 @@ ul, li {
                 text-transform: lowercase;
             }
         }
+        &__menu {
+            display: none;
+        }
     }
 }
 .main {
+    //WHY CHOOSE US//
     .why {
         width: 100vw;
         height: 38vw;
@@ -228,6 +232,7 @@ ul, li {
             }
         }
     }
+    //HOW TO WORK WITH US//
     .how {
         width: 100vw;
         height: 19vw;
@@ -250,7 +255,6 @@ ul, li {
                 align-items: center;
                 gap: 2vw;
                 background-color: var.$bg-dark-color;
-                z-index: 2;
             }
             &__icon {
                 i {
@@ -270,11 +274,6 @@ ul, li {
                 color: var.$text-light-color;
                 line-height: 26px;
                 text-transform: capitalize;
-            }
-            &__img {
-                position: absolute;
-                top: -3vw;
-                //NOT RESPONSIBLE CHECK LATER!!!!!!!!!!!!!!!!!//
             }
         }
     }
@@ -419,7 +418,6 @@ ul, li {
     //align-items: baseline;
     background-color: var.$bg-darker-color;
     &__content {
-        width: 12vw;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;

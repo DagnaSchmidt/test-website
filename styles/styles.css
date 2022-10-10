@@ -173,7 +173,7 @@ ul, li {
   display: flex;
   gap: 2.5vw;
 }
-.nav__content__item {
+.nav__content__item, .nav__content__menu {
   font-family: "Aleo", serif;
   font-size: 14px;
   font-weight: 400;
@@ -181,9 +181,12 @@ ul, li {
   text-transform: uppercase;
   line-height: 26px;
 }
-.nav__content__item:hover {
+.nav__content__item:hover, .nav__content__menu:hover {
   cursor: pointer;
   text-transform: lowercase;
+}
+.nav__content__menu {
+  display: none;
 }
 
 .main .why {
@@ -257,7 +260,6 @@ ul, li {
   align-items: center;
   gap: 2vw;
   background-color: #333333;
-  z-index: 2;
 }
 .main .how__content__icon i {
   font-size: 48px;
@@ -273,10 +275,6 @@ ul, li {
   color: #e8e8e8;
   line-height: 26px;
   text-transform: capitalize;
-}
-.main .how__content__img {
-  position: absolute;
-  top: -3vw;
 }
 .main .travel {
   width: 100vw;
@@ -414,7 +412,6 @@ ul, li {
   background-color: #232323;
 }
 .footer__content {
-  width: 12vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
